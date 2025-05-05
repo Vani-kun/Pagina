@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartera Personal</title>
+    <link rel="stylesheet" href="css/stylos.css">
+</head>
+<body>
+    <header>
+        <h1>Cartera Personal</h1>
+    </header>
+    <nav id="menu">
+        <a href="#about">Acerca de mi</a>
+        <a href="#proyects">Proyecto</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about">
+        <h2>Acerca de mi</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, et! Mollitia asperiores laborum corporis aliquid quasi enim magni, repellat perferendis magnam porro nulla dignissimos sint, placeat, illum doloribus quos dolorem.
+        <a href="#menu"><spam style="color:yellow">regresa al menu</spam></a>
+        <hr>
+    </section>
+
+    <section id="proyects">
+        <h2>Proyectos</h2>
+        <div class="gallery">
+            <img src="https://placehold.org/300x200/ffffff?text=hola+mundo">
+            <img src="https://placehold.org/300x200/ffffff?text=hola+mundo">
+            <img src="https://placehold.org/300x200/ffffff?text=hola+mundo">
+        </div><br>
+        <a href="#menu"><spam style="color:yellow">regresa al menu</spam></a>
+        <hr>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+                <h3>titulo del articulo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium itaque a incidunt deserunt porro! Blanditiis reprehenderit debitis maxime impedit aut. Temporibus, laborum quasi nihil consequatur assumenda commodi qui eos officia?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quam veniam totam earum molestiae maxime corrupti quidem! Minima dolore dicta ratione aliquid omnis aut assumenda magni, tenetur quam? Cumque, veniam!</p>
+        </article>
+        <a href="#menu"><spam style="color:yellow">regresa al menu</spam></a>
+        <hr>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+                <input type="text" id="name" placeholder="nombre" required>
+                <input type="email" id="email" placeholder="correo" required>
+                <textarea id="message" placeholder="mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+        </form>
+        <p id="formMessage"></p>
+        <a href="#menu"><spam style="color:yellow">regresa al menu</spam></a>
+    </section>
+
+    <footer>
+        <a href="#menu"><spam style="color:yellow">regresa al menu</spam></a>
+        <p>&copy; 2025 Cartera personal</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm".addEventListener("submit",function(evt){
+            evt.preventDefault();
+            const nombre=document.getElementById("name").value;
+            const correo=document.getElementById("email").value;
+            const mensaje=document.getElementById("message").value;
+            if(nombre && correo && mensaje){
+                document.getElementById("formMessage").textContent="gracias pior tu mensaje "+nombre
+                document.getElementById("contactForm").reset()
+            }else{
+                document.getElementById("formMessage").textContent="por favor coimplete todos los campos"
+            }
+        }))
+    </script>
+</body>
+</html>
