@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+}
+header{
+    background: rgb(58, 54, 54);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav{
+    background:#444;
+    padding: 0.5rem;
+}
+nav a{
+    color :white;
+    margin: 0 1rem;
+    text-align: none;
+}
+section{
+    padding:2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.gallery img{
+    width: 100%;
+    max-width: 200%;
+    height: auto;
+    border-radius: 8px;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+form input, form textarea, form button{
+    margin:0.5rem 0;
+    padding: 0.5rem;
+}
+
+footer{
+    background:rgb(21, 10, 24);
+    color:white;
+    text-align: center ;
+    padding:1rem 0;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
